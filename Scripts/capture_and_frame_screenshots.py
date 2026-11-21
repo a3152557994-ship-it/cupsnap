@@ -75,14 +75,12 @@ def capture_device_screens(udid: str, app_path: Path, device_tag: str, screens: 
     for lang in langs:
         for screen in screens:
             run(["xcrun", "simctl", "terminate", udid, BUNDLE_ID], check=False)
-            time.sleep(0.4)
+            time.sleep(0.5)
             run(["xcrun", "simctl", "launch", udid, BUNDLE_ID, "-ui_lang", lang, "-ui_demo_screen", screen])
             out_png = RAW_DIR / f"{device_tag}_{lang}_{screen}.png"
-            for attempt in range(4):
-                time.sleep(2.3 if attempt == 0 else 1.4)
-                run(["xcrun", "simctl", "io", udid, "screenshot", str(out_png)])
-                if out_png.stat().st_size > 40_000:
-                    break
+            # Wait generously for iOS 27 launch-screen fade-out to settle at 100% crisp contrast
+            time.sleep(5.2)
+            run(["xcrun", "simctl", "io", udid, "screenshot", str(out_png)])
             captured[(lang, screen)] = out_png
             print(f"  ✓ Captured {out_png.name} ({out_png.stat().st_size // 1024} KB)")
 

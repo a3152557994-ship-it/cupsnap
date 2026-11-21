@@ -33,7 +33,7 @@ struct CalendarWallView: View {
                     if store.hasSampleEntries {
                         sampleNoticeBanner
                     }
-                    Spacer(minLength: 92)
+                    Spacer(minLength: 112)
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 10)
@@ -51,7 +51,7 @@ struct CalendarWallView: View {
                 }
                 .foregroundStyle(.white)
                 .padding(.horizontal, 20)
-                .padding(.vertical, 14)
+                .padding(.vertical, 13)
                 .background(
                     Capsule()
                         .fill(
@@ -64,8 +64,8 @@ struct CalendarWallView: View {
                         .shadow(color: CupTheme.caramel.opacity(0.36), radius: 12, x: 0, y: 6)
                 )
             }
-            .padding(.trailing, 20)
-            .padding(.bottom, 18)
+            .padding(.trailing, 18)
+            .padding(.bottom, 10)
         }
         .sheet(item: $editingEntry) { entry in
             AddDrinkSheet(store: store, l10n: l10n, initialDate: entry.date, editingEntry: entry)
@@ -259,7 +259,7 @@ struct CalendarWallView: View {
                             frameStyle: first.frameStyle,
                             customImage: store.loadCustomSticker(fileName: first.customStickerFileName),
                             brandShort: first.brand,
-                            size: 44,
+                            size: 48,
                             tilt: first.tiltDegrees
                         )
                     }
