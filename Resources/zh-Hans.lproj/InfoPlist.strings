@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "贴一杯";
+"NSCameraUsageDescription" = "贴一杯需要访问相机，用于现场拍摄奶茶/咖啡杯离线生成手账贴纸，或拍摄杯身小票自动识别品牌与糖度，全程在手机本地完成，不上传云端。";
+"NSPhotoLibraryUsageDescription" = "贴一杯需要读取您选择的饮品照片或外卖订单截图，用于在本地离线抠图生成贴纸并自动提取品牌与价格，不上传云端。";
+"NSPhotoLibraryAddUsageDescription" = "贴一杯仅在您点击保存月度续命海报或手账贴纸日历时，将图片保存到系统相册。";

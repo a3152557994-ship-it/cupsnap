@@ -1,0 +1,33 @@
+{
+  "bundleId": "com.yanghe.cupsnap",
+  "widgetBundleId": "com.yanghe.cupsnap.widgets",
+  "sku": "CUPSNAP_IOS_20261121",
+  "version": "1.0.0",
+  "primaryLocale": "zh-Hans",
+  "primaryCategory": "FOOD_AND_DRINK",
+  "secondaryCategory": "LIFESTYLE",
+  "copyright": "2026 Yang He",
+  "supportEmail": "3152557994@qq.com",
+  "urls": {
+    "marketing": "https://a3152557994-ship-it.github.io/cupsnap/",
+    "support": "https://a3152557994-ship-it.github.io/cupsnap/support.html",
+    "privacy": "https://a3152557994-ship-it.github.io/cupsnap/privacy.html",
+    "terms": "https://a3152557994-ship-it.github.io/cupsnap/terms.html"
+  },
+  "localizations": {
+    "zh-Hans": {
+      "name": "贴一杯 - 奶茶咖啡拍照抠图贴纸日历",
+      "subtitle": "0广告离线识小票 · 自动抠杯变贴纸",
+      "keywords": "奶茶记录,咖啡打卡,饮品日历,贴纸手账,奶茶打卡,咖啡记录,喝水咖啡因,奶茶贴纸,小票识别,饮品统计,每日一杯,无广告",
+      "promotionalText": "彻底告别手动翻找品牌和虚假AI填表！拍下奶茶或咖啡杯1秒离线抠出手工白边贴纸，拍小票自动填品牌糖度价格，月底一键生成3:4小红书续命手账海报，当前纯免费0广告！",
+      "description": "每次喝到一杯超好看的奶茶或咖啡，随手拍完照片只能在相册里吃灰？想用饮品日历打卡，结果老软件要么小众店名（爷爷不泡茶、东方茉兰等）根本搜不到、要么每次记录还要看广告、换手机数据全没了？\n\n「贴一杯 CupSnap」是一款专为奶茶党与咖啡人打造的 0 广告、免登录、100% 离线贴纸手账日历：\n\n【核心亮点】\n1. 拍杯子 1 秒本地 AI 自动抠图变立体白边贴纸\n基于 Apple 设备端原生 Vision 前景分割引擎，无论是街角独立咖啡馆还是地方限定奶茶杯，随手一拍自动去背景并加上奶油手工白边与柔和阴影！支持经典白边、拍立得、复古邮票、和纸胶带 4 种手账边框，也内置 12 款高颜值手绘杯型贴纸随心选。\n\n2. 拍杯身小票 / 外卖截图 0.3 秒离线自动填表\n调用本地离线文字识别（OCR），内置 100+ 热门与小众茶饮咖啡品牌（涵盖霸王茶姬、瑞幸、喜茶、爷爷不泡茶、东方茉兰、茶颜悦色、阿嬷手作、茉莉奶白、古茗、茶百道、Manner、M Stand、柠季等，同时支持任意自填店名），自动提取品牌、饮品名、实付金额、糖度与冰度，并贴心估算咖啡因与热量。\n\n3. 超治愈「贴纸月历墙」+ 桌面小组件\n打开即见整月贴纸日历墙，每天喝的杯子以微微倾斜的立体贴纸贴在日期格上；支持 iOS 桌面小组件一键直达记录。\n\n4. 一键导出 3:4 月度续命饮品手账海报\n月底自动统计本月喝了多少杯、花了多少钱、最爱品牌与趣味续命称号（早C续命永动机 / 控糖美学鉴茶官 / 荣誉股东），提供焦糖奶油、抹茶和纸、草莓波点 3 套高颜值主题，一键保存无水印高清海报发小红书或朋友圈！\n\n5. 永久 0 广告、无需注册、一键导出备份防丢数据\n所有照片与账单均留在你的手机本地，绝不上传任何云端服务器；内置一键导出 JSON 备份与 CSV 表格功能，换手机轻松恢复，永不丢失珍贵记录！\n\n隐私政策：https://a3152557994-ship-it.github.io/cupsnap/privacy.html\n使用条款：https://a3152557994-ship-it.github.io/cupsnap/terms.html"
+    },
+    "en-US": {
+      "name": "CupSnap: Drink Sticker Diary",
+      "subtitle": "Snap Boba & Coffee Stickers",
+      "keywords": "boba,coffee,drink tracker,sticker calendar,caffeine,milk tea,latte,journal,receipt ocr,diary,offline",
+      "promotionalText": "Turn every boba and iced coffee photo into a crisp white-bordered die-cut sticker! Scan drink receipts offline and export aesthetic 3:4 monthly posters — 100% free & ad-free.",
+      "description": "Love taking photos of your daily iced latte, matcha, or boba tea only to let them get buried in your camera roll?\n\nCupSnap turns your favorite drinks into an adorable, aesthetic sticker calendar — 100% free, zero ads, no account required, and completely offline on your device.\n\nKEY FEATURES\n• 1-Tap On-Device Cutout Stickers: Powered by Apple Vision foreground segmentation, snap any cup or pick from Photos to remove the background and wrap your drink in a crisp white die-cut border, Polaroid frame, vintage stamp, or washi tape. Includes 12 hand-crafted illustrated cup styles too.\n• Offline Receipt & Order OCR: Scan cup labels or delivery screenshots offline to auto-fill brand, drink name, price, sugar level, ice level, and estimated caffeine & calories — works for any local café or chain.\n• Aesthetic Sticker Calendar Wall & Home Widgets: Watch your month fill up with tilted cup stickers at a glance, plus quick-log Home Screen widgets.\n• Shareable 3:4 Monthly Recap Posters: Pick from Caramel Cream, Matcha Paper, or Berry Polka themes to export a high-res monthly drink poster with your total cups, spend, top brand, and fun sip persona.\n• Local Privacy & Zero Data Loss: No cloud servers, no tracking. Export or restore full JSON backups and CSV spreadsheets anytime.\n\nPrivacy Policy: https://a3152557994-ship-it.github.io/cupsnap/privacy.html\nTerms of Use: https://a3152557994-ship-it.github.io/cupsnap/terms.html"
+    }
+  }
+}

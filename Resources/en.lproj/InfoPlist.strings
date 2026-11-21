@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "CupSnap";
+"NSCameraUsageDescription" = "CupSnap uses the camera to turn your boba or coffee cups into die-cut stickers and scan drink receipts offline on your device.";
+"NSPhotoLibraryUsageDescription" = "CupSnap reads selected drink photos or order screenshots on-device to cut out cup stickers and auto-fill brand and price.";
+"NSPhotoLibraryAddUsageDescription" = "CupSnap saves your monthly drink sticker poster to Photos only when you tap Save.";
