@@ -2,8 +2,11 @@
 
 > 严格执行红灯平台防封铁律：所有成品图文与 9:16 竖屏视频都在本目录 `media/` 文件夹里，老板直接手机复制文案 + 传图手发即可。
 
-- **苹果 App Store 官方下载直链（已正式过审上架！）**：`https://apps.apple.com/cn/app/id6837625024`（商店直接搜 `贴一杯` 免费下）
-- **公网网页即玩版（小红书评论区 / 主页可随时引流试玩）**：`https://a3152557994-ship-it.github.io/cupsnap/`
+- **苹果 App Store 官方下载直链（已正式过审上架美/港/台等 174 区，中国大陆区待补 APP ICP 备案后开放）**：
+  - 美区：`https://apps.apple.com/us/app/id6837625024`
+  - 港区：`https://apps.apple.com/hk/app/id6837625024`
+  - 台区：`https://apps.apple.com/tw/app/id6837625024`
+- **公网网页即玩版（中国大陆用户无需外区号、小红书评论区 / 主页直接免下载开玩）**：`https://a3152557994-ship-it.github.io/cupsnap/`
 - **一句话心智钉**：`0广告纯免费 · 拍奶茶杯 1 秒自动抠白边贴纸 · 拍小票 0.3 秒填表`
 - **打死的竞品 1★ 差评死穴**：
   1. 老软件收费才给 AI 自动填表，买了 Pro 发现根本没有；
@@ -30,13 +33,28 @@
   > ✅ **月底一键出小红书 3:4 续命手账海报**：自动算本月喝了几杯、花了多少钱、解锁「荣誉股东 / 早C续命永动机」称号，无水印直接存相册！
   > ✅ **换手机永不丢数据**：一键导出 JSON 备份存云盘 + 导出 Excel 表格
   >
-  > 刚刚已经通过苹果审核 **正式上架 App Store 啦🎉**（网页即玩版也同步放出来了），想听听大家的意见！
+  > 刚刚已经通过苹果审核 **正式上架海外/港台美区 App Store 啦🎉**（国内用户可以直接玩网页即玩版，国区正在办备案！），想听听大家的意见！
   > 👇 **评论区留言你最常喝的一家小众奶茶/咖啡店，或者还想要什么边框贴纸，点赞前 3 的我连夜加进下个版本！**
   >
   > #奶茶打卡 #饮品日历 #宝藏App分享 #独立开发 #手账贴纸 #咖啡续命 #爷爷不泡茶 #霸王茶姬 #听劝式开发
 
 - **置顶自评（发完立刻自己评论并置顶）**：
-  > 谢谢大家蹲！当前 100% 纯免费无广告，苹果 App Store 直接搜 **「贴一杯」** 就能免费下载（图标是奶油白边珍珠奶茶那个🧋，点主页简介也能先网页试玩），安卓党和更多贴纸边框也在加紧听劝安排中，大家把想加的店名直接丢评论区👇
+  > 谢谢大家蹲！当前 100% 纯免费无广告：有港台/美区苹果账号的姐妹直接在 App Store 搜 **「贴一杯」或「CupSnap」** 就能免费下（图标是奶油白边珍珠奶茶那个🧋）；国区正在走备案流程，先点主页简介里的网页版直接免费在线贴杯子出海报！大家把想加的店名直接丢评论区👇
+
+---
+
+## 第 6 弹（海外 TikTok / Reddit / X 英文爆款冷启动 — 直接吃 174 区已上架红利！）
+- **下载链接**：`https://apps.apple.com/us/app/id6837625024`
+- **TikTok / Reels 15s Hook**：`I got tired of my iced latte & boba photos dying in my camera roll, so I built a 100% free, ad-free iOS app that turns any cup photo into a die-cut sticker calendar.`
+- **Reddit (`r/boba`, `r/coffee`, `r/SideProject`) 标题**：`I built a 100% free, offline iOS app (CupSnap) that turns your boba & coffee photos into white-bordered stickers on a monthly calendar`
+- **正文**：
+  > Every time I grab a boba tea or iced matcha, I take a cute photo… and it just sits buried in my camera roll forever. Most drink tracker apps either charge subscriptions for basic logging, spam ads, or require cloud accounts.
+  > So I built **CupSnap** — 100% free, zero ads, no login, completely offline on-device:
+  > - Snap any cup or pick from Photos -> uses Apple Vision on-device to cut out the cup and wrap it in a white vinyl sticker border (plus Polaroid, Stamp, and Washi Tape frames)
+  > - Offline receipt OCR -> auto-fills drink name, price, sugar & ice level
+  > - 1-tap 3:4 monthly recap poster -> total cups, spend, caffeine estimate, and a fun drink persona
+  > - Full JSON backup / CSV export so you never lose your logs
+  > Live now on the App Store: https://apps.apple.com/us/app/id6837625024 — would love any honest feedback or cup presets you want added!
 
 ---
 
