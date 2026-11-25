@@ -1,0 +1,17 @@
+{
+  "name": "贴一杯 CupSnap — 奶茶咖啡拍照抠图贴纸日历",
+  "short_name": "贴一杯 CupSnap",
+  "description": "0广告纯免费的离线奶茶咖啡打卡日历：拍饮品杯1秒自动抠出白边手账贴纸，拍外卖小票0.3秒离线识别品牌糖度价格，一键生成小红书3:4月度续命海报。",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF5EC",
+  "theme_color": "#7A4627",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

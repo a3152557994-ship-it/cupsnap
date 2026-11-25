@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D985E3EB2AB107E24AF7F8 /* app_res::Assets.xcassets */ = {isa = PBXBuildFile; fileRef = F614116BE1FB5838A983E143; };
+		4B84EA8A4043D8D0FF3DCCC4 /* app_res::InfoPlist.strings */ = {isa = PBXBuildFile; fileRef = D5D7E58483B429F09E884925; };
+		588333F17E68D37707F12240 /* app_res::PrivacyInfo.xcprivacy */ = {isa = PBXBuildFile; fileRef = 6161E3F3F9C5AA9E7091672C; };
+		F6B5DB8EBD4A0BFB27FCE8DD /* app_src::Sources/CupSnapApp.swift */ = {isa = PBXBuildFile; fileRef = 74E84289C995FB878E5DE261; };
+		C2A0C53C4DA76934E983A13D /* app_src::Sources/Localization/L10n.swift */ = {isa = PBXBuildFile; fileRef = 776F0A9D68D0F15CE60E153E; };
+		659A0BCA90A116BB1A208E47 /* app_src::Sources/Models/DrinkModels.swift */ = {isa = PBXBuildFile; fileRef = 331BB3DB0FE4DE8020194A14; };
+		FBC4862573349FEFE6A5DDC4 /* app_src::Sources/Services/CupStickerEngine.swift */ = {isa = PBXBuildFile; fileRef = EE2D01A95A6B32F10EB5950C; };
+		4206AF0C495BB722BFAC3CEE /* app_src::Sources/Services/DrinkStore.swift */ = {isa = PBXBuildFile; fileRef = F3A4D4D0041A17A35FF22AA7; };
+		FB4D7431D30BBA946F5D3C78 /* app_src::Sources/Services/ReceiptOCREngine.swift */ = {isa = PBXBuildFile; fileRef = FD795A67D1BFC996EE3C3D6F; };
+		D5F697A2AB1AEF210CEE072B /* app_src::Sources/Views/AddDrinkSheet.swift */ = {isa = PBXBuildFile; fileRef = 772D3A0FFD970E2EEDA09380; };
+		45A5115C7DD52ADE714BA2B0 /* app_src::Sources/Views/CalendarWallView.swift */ = {isa = PBXBuildFile; fileRef = 2E6816B07C9B331C57633C76; };
+		8E9A2075A32D07A57318DAF8 /* app_src::Sources/Views/CupStickerArtView.swift */ = {isa = PBXBuildFile; fileRef = B9EACDADECB6A41AB22D9A27; };
+		9BEBF1D4BBB01BEA0A5729AC /* app_src::Sources/Views/InsightsView.swift */ = {isa = PBXBuildFile; fileRef = 62FABCE73F6AEA18AA5B26CA; };
+		76704460596C21165D116E20 /* app_src::Sources/Views/PosterStudioView.swift */ = {isa = PBXBuildFile; fileRef = 3CBD442F13094E4A63843FCE; };
+		3ECD213BAF82E5DC3E14A5AF /* test_src::Tests/CupSnapTests.swift */ = {isa = PBXBuildFile; fileRef = 1F6CBBB37137FF998E05AE51; };
+		540317EEEAB744F6A21D6576 /* widget_res::PrivacyInfo.xcprivacy */ = {isa = PBXBuildFile; fileRef = 6161E3F3F9C5AA9E7091672C; };
+		57993D735E23B8BEACAC57D4 /* widget_src::Widgets/CupSnapWidget.swift */ = {isa = PBXBuildFile; fileRef = 122FB091AF01DDF9D0DA9AF2; };
+		09829ADA7ECF8962906B84B9 /* CupSnapWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 009BAA6167D303E728EAD02C; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3FDBDCD8075A8F9830B7D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 958875B5AB2B05CBD85128C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FDF7F34C1A834F0DEC9348;
+			remoteInfo = CupSnapWidgets;
+		};
+		8142B4AB665AC553055D1492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 958875B5AB2B05CBD85128C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F87D6FF647EF4C48D1EAAD8;
+			remoteInfo = CupSnap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61F82E8BF76820C7521D0D5C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09829ADA7ECF8962906B84B9 /* CupSnapWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29A253BA1877057CA4B90BD4 /* CupSnap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CupSnap.entitlements"; path = "Config/CupSnap.entitlements"; sourceTree = "<group>"; };
+		78B692DE5BA3FD4BEB78B5D8 /* CupSnapWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CupSnapWidgets.entitlements"; path = "Config/CupSnapWidgets.entitlements"; sourceTree = "<group>"; };
+		8698392296B69341A665B268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Config/Info.plist"; sourceTree = "<group>"; };
+		2D9EA003DEC14C508ED66FC6 /* Widget-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Widget-Info.plist"; path = "Config/Widget-Info.plist"; sourceTree = "<group>"; };
+		F614116BE1FB5838A983E143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		6161E3F3F9C5AA9E7091672C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "PrivacyInfo.xcprivacy"; path = "Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		0E3A9FCF9780BDD118246FAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en"; path = "Resources/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C5B3E6DA2477214894A4E17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Resources/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		74E84289C995FB878E5DE261 /* CupSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CupSnapApp.swift"; path = "Sources/CupSnapApp.swift"; sourceTree = "<group>"; };
+		776F0A9D68D0F15CE60E153E /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "L10n.swift"; path = "Sources/Localization/L10n.swift"; sourceTree = "<group>"; };
+		331BB3DB0FE4DE8020194A14 /* DrinkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DrinkModels.swift"; path = "Sources/Models/DrinkModels.swift"; sourceTree = "<group>"; };
+		EE2D01A95A6B32F10EB5950C /* CupStickerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CupStickerEngine.swift"; path = "Sources/Services/CupStickerEngine.swift"; sourceTree = "<group>"; };
+		F3A4D4D0041A17A35FF22AA7 /* DrinkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DrinkStore.swift"; path = "Sources/Services/DrinkStore.swift"; sourceTree = "<group>"; };
+		FD795A67D1BFC996EE3C3D6F /* ReceiptOCREngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ReceiptOCREngine.swift"; path = "Sources/Services/ReceiptOCREngine.swift"; sourceTree = "<group>"; };
+		772D3A0FFD970E2EEDA09380 /* AddDrinkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AddDrinkSheet.swift"; path = "Sources/Views/AddDrinkSheet.swift"; sourceTree = "<group>"; };
+		2E6816B07C9B331C57633C76 /* CalendarWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CalendarWallView.swift"; path = "Sources/Views/CalendarWallView.swift"; sourceTree = "<group>"; };
+		B9EACDADECB6A41AB22D9A27 /* CupStickerArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CupStickerArtView.swift"; path = "Sources/Views/CupStickerArtView.swift"; sourceTree = "<group>"; };
+		62FABCE73F6AEA18AA5B26CA /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "InsightsView.swift"; path = "Sources/Views/InsightsView.swift"; sourceTree = "<group>"; };
+		3CBD442F13094E4A63843FCE /* PosterStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PosterStudioView.swift"; path = "Sources/Views/PosterStudioView.swift"; sourceTree = "<group>"; };
+		1F6CBBB37137FF998E05AE51 /* CupSnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CupSnapTests.swift"; path = "Tests/CupSnapTests.swift"; sourceTree = "<group>"; };
+		122FB091AF01DDF9D0DA9AF2 /* CupSnapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CupSnapWidget.swift"; path = "Widgets/CupSnapWidget.swift"; sourceTree = "<group>"; };
+		390F6C0413CC40498B58C10A /* CupSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		009BAA6167D303E728EAD02C /* CupSnapWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CupSnapWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A633435420EA02D101425475 /* CupSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8198EDD4D5D854FD2AA66B08 /* Frameworks (CupSnap) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBE06C57E9B86FB1DCA7FD6 /* Frameworks (CupSnapWidgets) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF41C16CBC8DB735BEFA4C4 /* Frameworks (CupSnapTests) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1614AC7F5AE42898D3030B6F = {
+			isa = PBXGroup;
+			children = (
+				1B6DAE041E75BD45B1DAC63F /* Sources */,
+				AC48CB6F83A6056B85790A76 /* Widgets */,
+				DD747D699F979E506347BFF9 /* Tests */,
+				52180F2E8E4E77B76DFE207E /* Resources */,
+				620AB249B24801C0B906E691 /* Config */,
+				1E353E2ECB1B6A5CE129C5F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B6DAE041E75BD45B1DAC63F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				74E84289C995FB878E5DE261,
+				776F0A9D68D0F15CE60E153E,
+				331BB3DB0FE4DE8020194A14,
+				EE2D01A95A6B32F10EB5950C,
+				F3A4D4D0041A17A35FF22AA7,
+				FD795A67D1BFC996EE3C3D6F,
+				772D3A0FFD970E2EEDA09380,
+				2E6816B07C9B331C57633C76,
+				B9EACDADECB6A41AB22D9A27,
+				62FABCE73F6AEA18AA5B26CA,
+				3CBD442F13094E4A63843FCE,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		AC48CB6F83A6056B85790A76 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				122FB091AF01DDF9D0DA9AF2,
+			);
+			name = Widgets;
+			sourceTree = "<group>";
+		};
+		DD747D699F979E506347BFF9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6CBBB37137FF998E05AE51,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		52180F2E8E4E77B76DFE207E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F614116BE1FB5838A983E143,
+				6161E3F3F9C5AA9E7091672C,
+				D5D7E58483B429F09E884925,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		620AB249B24801C0B906E691 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8698392296B69341A665B268,
+				2D9EA003DEC14C508ED66FC6,
+				29A253BA1877057CA4B90BD4,
+				78B692DE5BA3FD4BEB78B5D8,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		1E353E2ECB1B6A5CE129C5F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				390F6C0413CC40498B58C10A,
+				009BAA6167D303E728EAD02C,
+				A633435420EA02D101425475,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F87D6FF647EF4C48D1EAAD8 /* CupSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA4B624595FA3E74CA9908A;
+			buildPhases = (
+				8A702CCB900B6EE2103A3DE6 /* Sources */,
+				8198EDD4D5D854FD2AA66B08 /* Frameworks */,
+				C25329D46730D78B9BB7CE54 /* Resources */,
+				61F82E8BF76820C7521D0D5C /* Embed Foundation Extensions */,
+			);
+			buildRules = ();
+			dependencies = (
+				C485E6B0CE19ABA1982710EC /* PBXTargetDependency */,
+			);
+			name = CupSnap;
+			productName = CupSnap;
+			productReference = 390F6C0413CC40498B58C10A;
+			productType = "com.apple.product-type.application";
+		};
+		35FDF7F34C1A834F0DEC9348 /* CupSnapWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4108FD8738BDDD1348E32F72;
+			buildPhases = (
+				6409FA657E29935ADF14A7E5 /* Sources */,
+				3BBE06C57E9B86FB1DCA7FD6 /* Frameworks */,
+				F1956C5CA41661BF6752DC4D /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = CupSnapWidgets;
+			productName = CupSnapWidgets;
+			productReference = 009BAA6167D303E728EAD02C;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D4C2C89EB4CC13F3062F8577 /* CupSnapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C58022F502E2394E96362EA;
+			buildPhases = (
+				0FB3D4A6D51EBCDE2D40856C /* Sources */,
+				6DF41C16CBC8DB735BEFA4C4 /* Frameworks */,
+				6804A804B5027F74CBA62330 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				3475A1C3CEED670295D803B5 /* PBXTargetDependency */,
+			);
+			name = CupSnapTests;
+			productName = CupSnapTests;
+			productReference = A633435420EA02D101425475;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		958875B5AB2B05CBD85128C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2720;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					4F87D6FF647EF4C48D1EAAD8 = { DevelopmentTeam = KU364788TC; ProvisioningStyle = Automatic; };
+					35FDF7F34C1A834F0DEC9348 = { DevelopmentTeam = KU364788TC; ProvisioningStyle = Automatic; };
+					D4C2C89EB4CC13F3062F8577 = { DevelopmentTeam = KU364788TC; TestTargetID = 4F87D6FF647EF4C48D1EAAD8; };
+				};
+			};
+			buildConfigurationList = 31498711E4D6CA0E873B6695;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (en, "zh-Hans", Base);
+			mainGroup = 1614AC7F5AE42898D3030B6F;
+			productRefGroup = 1E353E2ECB1B6A5CE129C5F1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F87D6FF647EF4C48D1EAAD8 /* CupSnap */,
+				35FDF7F34C1A834F0DEC9348 /* CupSnapWidgets */,
+				D4C2C89EB4CC13F3062F8577 /* CupSnapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C25329D46730D78B9BB7CE54 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D985E3EB2AB107E24AF7F8 /* app_res::Assets.xcassets */,
+				588333F17E68D37707F12240 /* app_res::PrivacyInfo.xcprivacy */,
+				4B84EA8A4043D8D0FF3DCCC4 /* app_res::InfoPlist.strings */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1956C5CA41661BF6752DC4D = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540317EEEAB744F6A21D6576 /* widget_res::PrivacyInfo.xcprivacy */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6804A804B5027F74CBA62330 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A702CCB900B6EE2103A3DE6 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B5DB8EBD4A0BFB27FCE8DD /* Sources/CupSnapApp.swift */,
+				C2A0C53C4DA76934E983A13D /* Sources/Localization/L10n.swift */,
+				659A0BCA90A116BB1A208E47 /* Sources/Models/DrinkModels.swift */,
+				FBC4862573349FEFE6A5DDC4 /* Sources/Services/CupStickerEngine.swift */,
+				4206AF0C495BB722BFAC3CEE /* Sources/Services/DrinkStore.swift */,
+				FB4D7431D30BBA946F5D3C78 /* Sources/Services/ReceiptOCREngine.swift */,
+				D5F697A2AB1AEF210CEE072B /* Sources/Views/AddDrinkSheet.swift */,
+				45A5115C7DD52ADE714BA2B0 /* Sources/Views/CalendarWallView.swift */,
+				8E9A2075A32D07A57318DAF8 /* Sources/Views/CupStickerArtView.swift */,
+				9BEBF1D4BBB01BEA0A5729AC /* Sources/Views/InsightsView.swift */,
+				76704460596C21165D116E20 /* Sources/Views/PosterStudioView.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6409FA657E29935ADF14A7E5 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57993D735E23B8BEACAC57D4 /* Widgets/CupSnapWidget.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB3D4A6D51EBCDE2D40856C = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECD213BAF82E5DC3E14A5AF /* Tests/CupSnapTests.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C485E6B0CE19ABA1982710EC = {isa = PBXTargetDependency; target = 35FDF7F34C1A834F0DEC9348; targetProxy = F3FDBDCD8075A8F9830B7D7D; };
+		3475A1C3CEED670295D803B5 = {isa = PBXTargetDependency; target = 4F87D6FF647EF4C48D1EAAD8; targetProxy = 8142B4AB665AC553055D1492; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5D7E58483B429F09E884925 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5B3E6DA2477214894A4E17E /* zh-Hans */,
+				0E3A9FCF9780BDD118246FAF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E0287CD912C3AFA19A467D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KU364788TC;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 2;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
+			};
+			name = Debug;
+		};
+		ABF65085D9E522CFA82BD077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KU364788TC;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 2;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0EB98773C84BF3547666249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Config/CupSnap.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.cupsnap;
+				PRODUCT_NAME = CupSnap;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+			};
+			name = Debug;
+		};
+		F69FBBD6172D9EDEC0FFD65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Config/CupSnap.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.cupsnap;
+				PRODUCT_NAME = CupSnap;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "CupSnap AppStore Dist";
+			};
+			name = Release;
+		};
+		97CDB9DD6E6A2786EF241F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "Config/CupSnapWidgets.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Widget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.cupsnap.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+			};
+			name = Debug;
+		};
+		EF69401438B7AE0453F2D840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "Config/CupSnapWidgets.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Widget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.cupsnap.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "CupSnap Widgets AppStore Dist";
+			};
+			name = Release;
+		};
+		5A90242462BEC3D61E1D1FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.cupsnap.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CupSnap.app/CupSnap";
+			};
+			name = Debug;
+		};
+		AFFE0E9CE840FF2EE2DBFE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.cupsnap.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CupSnap.app/CupSnap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31498711E4D6CA0E873B6695 /* Build configuration list for PBXProject CupSnap */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0287CD912C3AFA19A467D7 /* Debug */,
+				ABF65085D9E522CFA82BD077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA4B624595FA3E74CA9908A /* Build configuration list for PBXNativeTarget CupSnap */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0EB98773C84BF3547666249 /* Debug */,
+				F69FBBD6172D9EDEC0FFD65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4108FD8738BDDD1348E32F72 /* Build configuration list for PBXNativeTarget CupSnapWidgets */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97CDB9DD6E6A2786EF241F81 /* Debug */,
+				EF69401438B7AE0453F2D840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C58022F502E2394E96362EA /* Build configuration list for PBXNativeTarget CupSnapTests */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A90242462BEC3D61E1D1FFD /* Debug */,
+				AFFE0E9CE840FF2EE2DBFE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 958875B5AB2B05CBD85128C0 /* Project object */;
+}

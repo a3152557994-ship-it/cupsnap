@@ -1,9 +1,12 @@
+import StoreKit
 import SwiftUI
 import UniformTypeIdentifiers
 
 struct InsightsView: View {
     @ObservedObject var store: DrinkStore
     @ObservedObject var l10n: L10n
+    @Environment(\.requestReview) private var requestReview
+    @Environment(\.openURL) private var openURL
 
     @State private var showExporter = false
     @State private var showImporter = false
@@ -26,6 +29,8 @@ struct InsightsView: View {
                     brandRankingCard
                     sugarBreakdownCard
                     dataSafetyBackupCard
+                    reviewFunnelCard
+                    studioMoreAppsCard
                     aboutAppCard
                     Spacer(minLength: 40)
                 }
@@ -242,6 +247,107 @@ struct InsightsView: View {
         .background(cardSurface)
     }
 
+    private var reviewFunnelCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Label(l10n.t("觉得「贴一杯」顺手吗？", "Enjoying CupSnap?"), systemImage: "heart.circle.fill")
+                .font(.system(size: 15, weight: .bold, design: .rounded))
+                .foregroundStyle(CupTheme.cocoaInk)
+            Text(l10n.t("独立开发者坚持 0 广告纯免费。你的一个五星好评，能帮更多爱喝奶茶咖啡的朋友搜到它！", "Zero ads & 100% free. Your quick 5-star rating helps fellow boba & coffee lovers discover CupSnap!"))
+                .font(.system(size: 12))
+                .foregroundStyle(CupTheme.mutedBrown)
+            HStack(spacing: 8) {
+                Button {
+                    requestReview()
+                    if let url = URL(string: "https://apps.apple.com/app/id6837625024?action=write-review") {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                            openURL(url)
+                        }
+                    }
+                } label: {
+                    Label(l10n.t("给个五星鼓励 ★", "Rate 5 Stars ★"), systemImage: "star.fill")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(RoundedRectangle(cornerRadius: 12).fill(CupTheme.caramel))
+                }
+
+                Button {
+                    if let mail = URL(string: "mailto:a3152557994@gmail.com?subject=CupSnap%20Feedback") {
+                        openURL(mail)
+                    }
+                } label: {
+                    Label(l10n.t("提建议/加品牌", "Feedback"), systemImage: "envelope.fill")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(CupTheme.caramel)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(RoundedRectangle(cornerRadius: 12).fill(Color(hex: "F3E5D4")))
+                }
+            }
+        }
+        .padding(15)
+        .background(cardSurface)
+    }
+
+    private var studioMoreAppsCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Label(l10n.t("同作者 0 广告离线精品工具", "More Ad-Free Offline Apps"), systemImage: "sparkles")
+                .font(.system(size: 15, weight: .bold, design: .rounded))
+                .foregroundStyle(CupTheme.cocoaInk)
+
+            studioAppRow(
+                emoji: "🔍",
+                title: l10n.t("配料照妖镜 PureScan", "PureScan: Ingredient OCR"),
+                sub: l10n.t("不用条形码 · 0.3秒离线拍奶茶零食与猫粮配料避雷", "Scan food, skincare & pet labels 100% offline"),
+                urlStr: "https://apps.apple.com/app/id6837347918"
+            )
+            studioAppRow(
+                emoji: "🛡️",
+                title: l10n.t("净盾 CleanShield", "CleanShield: Safari & EXIF"),
+                sub: l10n.t("Safari 零权限网页去广告 · 发原图前一键抹除 GPS 定位", "Zero-permission Safari blocker & Photo GPS scrubber"),
+                urlStr: "https://apps.apple.com/app/id6836843272"
+            )
+            studioAppRow(
+                emoji: "🎞️",
+                title: l10n.t("等片相机 WaitCam", "WaitCam: 12h Film Camera"),
+                sub: l10n.t("拍完锁进暗房 12 小时后开盲盒 · 派对强闪复古胶片", "Shoot tonight, reveal tomorrow retro disposable cam"),
+                urlStr: "https://apps.apple.com/app/id6837624010"
+            )
+        }
+        .padding(15)
+        .background(cardSurface)
+    }
+
+    private func studioAppRow(emoji: String, title: String, sub: String, urlStr: String) -> some View {
+        Button {
+            if let u = URL(string: urlStr) { openURL(u) }
+        } label: {
+            HStack(spacing: 10) {
+                Text(emoji)
+                    .font(.system(size: 22))
+                    .frame(width: 38, height: 38)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color(hex: "F5ECE0")))
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title)
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundStyle(CupTheme.cocoaInk)
+                    Text(sub)
+                        .font(.system(size: 11))
+                        .foregroundStyle(CupTheme.mutedBrown)
+                        .lineLimit(1)
+                }
+                Spacer()
+                Image(systemName: "arrow.up.right.circle.fill")
+                    .font(.system(size: 16))
+                    .foregroundStyle(CupTheme.caramel)
+            }
+            .padding(8)
+            .background(RoundedRectangle(cornerRadius: 12).fill(CupTheme.paperBg.opacity(0.7)))
+        }
+        .buttonStyle(.plain)
+    }
+
     private var aboutAppCard: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -261,7 +367,7 @@ struct InsightsView: View {
             Divider().overlay(CupTheme.borderLine)
 
             VStack(alignment: .leading, spacing: 4) {
-                Text(l10n.t("贴一杯 CupSnap v1.0.0 · 独立开发者匠心打造", "CupSnap v1.0.0 · Crafted Independently"))
+                Text(l10n.t("贴一杯 CupSnap v1.0.1 · 独立开发者匠心打造", "CupSnap v1.0.1 · Crafted Independently"))
                     .font(.system(size: 13, weight: .bold))
                     .foregroundStyle(CupTheme.cocoaInk)
                 Text(l10n.t("承诺：当前全功能免费、0 开屏广告、离线 AI 抠图与小票识别，照片绝不上传任何云端服务器。", "Promise: Full features free, zero ads, 100% on-device Vision AI cutout & OCR."))

@@ -1,4 +1,5 @@
 import Photos
+import StoreKit
 import SwiftUI
 import UIKit
 
@@ -6,6 +7,8 @@ import UIKit
 struct PosterStudioView: View {
     @ObservedObject var store: DrinkStore
     @ObservedObject var l10n: L10n
+    @Environment(\.requestReview) private var requestReview
+    @AppStorage("cupsnap_poster_review_prompted_v1") private var hasPromptedPosterReview = false
 
     @State private var theme: PosterTheme = .caramelCream
     @State private var savedToast: String? = nil
@@ -277,6 +280,12 @@ struct PosterStudioView: View {
         UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
         withAnimation {
             savedToast = l10n.t("已保存高清 3:4 海报到系统相册，快去发小红书吧 ✨", "Saved high-res poster to Photos ✨")
+        }
+        if !hasPromptedPosterReview {
+            hasPromptedPosterReview = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+                requestReview()
+            }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             withAnimation { savedToast = nil }

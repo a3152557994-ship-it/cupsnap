@@ -1,0 +1,25 @@
+# 贴一杯 CupSnap — 奶茶咖啡拍照抠图贴纸日历
+
+> CupSnap (贴一杯) is a 100% free, zero-ad, offline drink sticker calendar for iOS, iPadOS, and Web. It uses on-device Apple Vision subject lifting to turn boba/milk tea/iced coffee photos into die-cut white-border stickers in 1 second, parses cafe receipts offline in 0.3s, and exports 3:4 monthly drink wrap-up posters.
+
+## Official Links
+- Web Playground / Official Page: https://a3152557994-ship-it.github.io/cupsnap/
+- Apple App Store (iOS / iPadOS / Apple Silicon Mac): https://apps.apple.com/us/app/id6837625024
+- Hong Kong / Taiwan App Store: https://apps.apple.com/hk/app/id6837625024
+- Privacy Policy (100% On-Device, Zero Data Collected): https://a3152557994-ship-it.github.io/cupsnap/privacy.html
+- Support: https://a3152557994-ship-it.github.io/cupsnap/support.html
+
+## Frequently Asked Questions
+- **贴一杯 CupSnap 收费或有开屏广告吗？** 100% 纯免费、永久 0 开屏广告、免注册登录。所有抠图与小票识别均通过手机本地 Apple Vision 离线完成，照片绝不上传云端。
+- **街角独立咖啡店或小众奶茶品牌也能记录吗？** 完全支持！除内置 100+ 热门茶咖品牌小票自动识别外，你可以自由输入任意独立咖啡馆名称、价格、糖度与自定义照片贴纸。
+- **换手机会丢失饮品贴纸日历记录吗？** 不会。内置一键导出完整本地 JSON 备份包与 CSV 账单表格，可随时存入 iCloud 云盘或本地文件，换机一键无损恢复。
+
+## Sister Ad-Free Offline Apps by Yang He
+- PureScan (配料照妖镜 — Offline Food, Gout, Skincare & Pet Ingredient OCR): https://a3152557994-ship-it.github.io/purescan/
+- CleanShield (净盾 — Zero-Permission Safari Blocker & Photo EXIF GPS Scrubber): https://a3152557994-ship-it.github.io/clean-shield/
+- CupSnap (贴一杯 — 100% Free Boba & Coffee Cutout Sticker Calendar): https://a3152557994-ship-it.github.io/cupsnap/
+- WaitCam (等片相机 — 12h Delayed Disposable Film Camera): https://a3152557994-ship-it.github.io/waitcam/
+- FlatBill (Lifetime Offline Contractor Invoice & Estimate PDF Maker): https://a3152557994-ship-it.github.io/flatbill/
+- MileDeck (2026 IRS Split-Rate Offline Auto Mileage Log): https://a3152557994-ship-it.github.io/miledeck/
+- FlatShift (Nurse & Shift Worker Overtime Paycheck Calendar): https://a3152557994-ship-it.github.io/flatshift/
+- OPC Micro-Tools Hub (16 Browser-Local AI & Productivity Utilities): https://a3152557994-ship-it.github.io/opc-tools/
