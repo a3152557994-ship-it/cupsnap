@@ -137,7 +137,10 @@ final class DrinkStore: ObservableObject {
 
         let topBrands = brandCounts.sorted { $0.value > $1.value }.map { ($0.key, $0.value) }
         let topBrand = topBrands.first?.0 ?? "—"
-        let favSugar = sugarCounts.sorted { $0.value > $1.value }.first?.key ?? .thirty
+        let ratedSugars = sugarCounts.filter { $0.key != .unspecified }
+        let favSugar = ratedSugars.sorted { $0.value > $1.value }.first?.key
+            ?? sugarCounts.sorted { $0.value > $1.value }.first?.key
+            ?? .unspecified
 
         return MonthlyDrinkStats(
             totalCups: count,

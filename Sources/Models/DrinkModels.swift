@@ -52,6 +52,7 @@ enum DrinkCategory: String, Codable, CaseIterable, Identifiable {
 }
 
 enum SugarLevel: String, Codable, CaseIterable, Identifiable {
+    case unspecified = "unspecified"
     case zero = "zero"
     case thirty = "thirty"
     case fifty = "fifty"
@@ -62,6 +63,7 @@ enum SugarLevel: String, Codable, CaseIterable, Identifiable {
 
     func title(_ isZh: Bool) -> String {
         switch self {
+        case .unspecified: return isZh ? "未标注" : "Unlisted"
         case .zero: return isZh ? "不额外加糖" : "0% Sugar"
         case .thirty: return isZh ? "三分微甜" : "30% Less"
         case .fifty: return isZh ? "五分半糖" : "50% Half"
@@ -72,6 +74,7 @@ enum SugarLevel: String, Codable, CaseIterable, Identifiable {
 
     var shortLabel: String {
         switch self {
+        case .unspecified: return "未标注"
         case .zero: return "0%"
         case .thirty: return "30%"
         case .fifty: return "50%"
@@ -82,6 +85,7 @@ enum SugarLevel: String, Codable, CaseIterable, Identifiable {
 
     var calorieMultiplier: Double {
         switch self {
+        case .unspecified: return 1.0
         case .zero: return 0.58
         case .thirty: return 0.78
         case .fifty: return 0.92
